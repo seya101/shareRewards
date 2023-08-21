@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ShareButtonsConfig } from 'ngx-sharebuttons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'share-rewards';
+  dynamicReferralCode: string = '123ASDE'; // Replace with your actual referral code
 }

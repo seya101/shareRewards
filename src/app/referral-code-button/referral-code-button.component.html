@@ -1,0 +1,28 @@
+<div class="flex">
+  <p
+  id="referral-link"
+  type="text"
+  class="w-full gray-border rounded-l-lg px-4 py-2 border border-gray-200"
+  [textContent]="referralCode"
+  id="referralCodeInput"></p>
+
+  <button
+  (click)="copyReferralCode()"
+  id="copy-button"
+  class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+    <ng-container *ngIf="!copySuccess; else copied">
+      <i class="fa fa-copy"></i> Copy
+    </ng-container>
+    <ng-template #copied>
+      <i class="fa fa-check"></i> Copied!
+    </ng-template>
+  </button>
+
+<!-- <input
+  id="referral-link"
+  type="text"
+  class="w-full rounded-l-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300"
+  [value]="referralCode"
+  id="referralCodeInput"> -->
+
+</div>
