@@ -34,6 +34,5 @@ export class ReferralCodeButtonComponent {
       setTimeout(() => {
         this.copySuccess = false;
       }, 1000); // Revert back to the copy icon after 3 seconds
-
   }
 }

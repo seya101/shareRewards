@@ -7,13 +7,23 @@
       <app-referral-code-button [referralCode]="dynamicReferralCode"></app-referral-code-button>
  
     <div class="mt-4 flex justify-center items-center">
-      <share-buttons 
+
+      <!-- ngx-sharebuttons -->
+      <!-- <share-buttons 
       [theme]="'circles-light'"
       [include]="['facebook','twitter','viber','messenger','whatsapp']"
       [show]="5"
       [url]="'https://dragonfi.ph/'"
       [autoSetMeta]="false"
-      ></share-buttons>
+      ></share-buttons> -->
+      
+      <!-- Web Share API -->
+      <button 
+        class="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" 
+        (click)="share()">
+          Share
+      </button>
+
 
     </div>
   </div>
